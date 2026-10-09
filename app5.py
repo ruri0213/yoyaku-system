@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 
 # ─── 🔑 【新機能】ログイン機能の設定 ───
 # 大学のメンバーに教える「共通のIDとパスワード」です
-USER_ID = "agu"       # ユーザーID
-USER_PASS = "agu2026"       # パスワード
+USER_ID = st.secrets["USER_ID"]       # ユーザーID
+USER_PASS = st.secrets["USER_PASS"]       # パスワード
 
 # ログイン状態を記憶する箱（セッション）を準備
 if "logged_in" not in st.session_state:
